@@ -14014,11 +14014,11 @@ input.zinput-file[type='file'] {
 -----------------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #d0021b;
+  background-color: #ff00ff;
 }
 ::selection {
   color: #fff;
-  background-color: #d0021b;
+  background-color: #ff00ff;
 }
 
 body {
@@ -14117,9 +14117,9 @@ label,
 .devices-wrapper .device {
   width: 100% !important;
   border-radius: 0.5rem;
-  border: 0.25rem solid rgba(190, 190, 190, 0.1);
-  -webkit-box-shadow: -0.125rem 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.3);
-  box-shadow: -0.125rem 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.3);
+  /*border: 0.25rem solid rgba(190, 190, 190, 0.1);*/
+  /*-webkit-box-shadow: -0.125rem 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.3);*/
+  /*box-shadow: -0.125rem 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.3);*/
   width: 6.25rem;
   -webkit-transition: -webkit-transform 2s cubic-bezier(0.77, 0, 0.18, 1);
   transition: -webkit-transform 2s cubic-bezier(0.77, 0, 0.18, 1);
