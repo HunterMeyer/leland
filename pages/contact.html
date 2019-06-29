@@ -130,14 +130,42 @@
                     <a class="btn btn-dark btn-sm" href="#"><span class="fab fa-linkedin-in" data-fa-transform="grow-6"></span></a>
                   </div>
                   <h3 class="mt-7">Give us a shout</h3>
-                  <form class="zform mt-4" method="POST">
-                    <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
-                    <input class="form-control border-300 mt-3" type="text" placeholder="Your Name" aria-label="Text input with dropdown button">
-                    <input class="form-control border-300 mt-3" type="text" placeholder="Phone Number" aria-label="Text input with dropdown button">
-                    <textarea class="form-control border-300 mt-3" rows="11" placeholder="Your Message" required></textarea>
+                  <form class="zform mt-4" id="quote-form" method="POST">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="First Name" aria-label="Text input with dropdown button" name="txtContactNameFirst">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Last Name" aria-label="Text input with dropdown button" name="txtContactNameLast">
+
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Street Address" aria-label="Text input with dropdown button" name="txtPropertyAddress">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="City" aria-label="Text input with dropdown button" name="txtPropertyCity">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="State" aria-label="Text input with dropdown button" name="txtPropertyState">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Zip Code" aria-label="Text input with dropdown button" name="txtPropertyZip">
+
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Year Built" aria-label="Text input with dropdown button" name="txtStructureYearBuilt">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Square Feet" aria-label="Text input with dropdown button" name="txtStructureSquareFeet">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Single Family" aria-label="Text input with dropdown button" name="ddlStructureType">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Concrete Block" aria-label="Text input with dropdown button" name="ddlStructureConstruction">
+
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Coverage A" aria-label="Text input with dropdown button" name="txtCoveragesCoverageA">
+
                     <button class="btn btn-block btn-dark mt-4" type="submit">Send<span class="fa fa-paper-plane ml-1"></span></button>
                     <div class="zform-feedback mt-4"></div>
                   </form>
+                  <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+                  <script type="text/javascript">
+                    $('#quote-form').submit(function(e){
+                        e.preventDefault();
+                        $.ajax({
+                            url:'http://quoterush.com/webform/default.aspx?QRID=QR234197828976&wf=2',
+                            type:'post',
+                            data:$('#quote-form').serialize(),
+                            success:function(res){
+                                debugger;
+                            }
+                        });
+                    });
+                  </script>
                 </div>
               </div>
             </div>
