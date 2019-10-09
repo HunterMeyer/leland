@@ -21,15 +21,14 @@ const Promise = require('promise');
 /*-----------------------------------------------
 |   Paths
 -----------------------------------------------*/
-// const CSS = 'pages/assets/css';
-const JS = 'pages/assets/js';
-const lib = 'pages/assets/lib';
+// const CSS = 'assets/css';
+const JS = 'assets/js';
+const lib = 'assets/lib';
 const Paths = {
   HERE: './',
   PAGES: {
-    FOLDER: 'pages',
-    ALL: 'pages/**/*.*',
-    HTML: 'pages/**/*.html',
+    ALL: '**/*.*',
+    HTML: '**/*.html',
   },
   JS: {
     ALL: 'js/**/*.js',
@@ -54,13 +53,13 @@ const Paths = {
     THEME: 'scss/theme.scss',
   },
   ASSETS: {
-    ALL: 'pages/assets/**/*.*',
-    FONTS: 'pages/assets/fonts/**/*.*',
-    VIDEO: 'pages/assets/video/**/*.*',
-    IMG: 'pages/assets/img/**/*.*',
-    JS: 'pages/assets/js',
+    ALL: 'assets/**/*.*',
+    FONTS: 'assets/fonts/**/*.*',
+    VIDEO: 'assets/video/**/*.*',
+    IMG: 'assets/img/**/*.*',
+    JS: 'assets/js',
   },
-  CSS: 'pages/assets/css',
+  CSS: 'assets/css',
   DEPENDENCIES: {
     jquery: {
       FROM: 'node_modules/jquery/dist/jquery.min.js',
@@ -162,8 +161,8 @@ const Paths = {
   GENERATED: [
     'js/bootstrap',
     'scss/bootstrap',
-    'pages/assets/css',
-    'pages/assets/js',
+    'assets/css',
+    'assets/js',
   ],
 };
 
