@@ -262,7 +262,7 @@
           </div>
           <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
             <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
-              &copy; 2019 Leland Agency LLC
+              &copy; <span class="current-year">2019</span> Leland Agency LLC
             </p>
           </div>
           <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
@@ -290,5 +290,6 @@
     <script src="assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>$('.current-year').html((new Date()).getFullYear())</script>
   </body>
 </html>
